@@ -42,9 +42,7 @@ function updateTheme(isDarkMode){
 
 updateTheme(true);
 modeBtn.onclick = () => {
-  const darkSections = document.querySelectorAll('nav, #Home, .info, .skill, .Proj, .cert, .contactbackground');
-
-  if(isDark){
+    if(isDark){
     document.body.style.background = '#F7F5FB';
     document.body.style.color = '#0D1F2D';
     darkSections.forEach(el => {
@@ -58,6 +56,7 @@ modeBtn.onclick = () => {
   } else {
     document.body.style.background = '#0D1F2D';
     document.body.style.color = '#F7F5FB';
+    
     darkSections.forEach(el => {
       el.style.background = '#0D1F2D';
       el.style.color = '#F7F5FB';
