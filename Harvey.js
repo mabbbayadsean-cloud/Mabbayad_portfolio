@@ -89,6 +89,10 @@ function updateActiveNav(){
     const linkHref = link.getAttribute('href');
     if(linkHref === `#${current}` || linkHref.endsWith(`#${current}`)){
       link.style.color = '#F9AB55'; link.style.fontWeight = 'bold'; link.style.borderBottom = '3px solid #F9AB55';
+        // kapag nasa pinakababa na ng page, Contact Me na ang active
+     if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 5) {
+    current = sections[sections.length - 1].getAttribute('id');
+  }
     }
   });
 }
