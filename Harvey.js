@@ -39,7 +39,7 @@ function updateTheme(isDarkMode){
       .info:hover, .skill:hover, .Proj:hover, .cert:hover{ 
       background:#F7F5FB !important; transform:translateY(-8px); }
       .info:hover h3, .info:hover p, .info:hover li, .skill:hover h3, .skill:hover p, .Proj:hover h3, .Proj:hover p, .cert:hover h3, .cert:hover p{
-      #Achievements h1color:#0D1F2D !important; }
+      #color:#0D1F2D !important; }
        #AboutMe em, .skills em, .projects em, #ContactMe em, #Achievements em, .info h3, .skill h3, .Proj h3{
   color:#F9AB55 !important;
 }
@@ -49,7 +49,8 @@ function updateTheme(isDarkMode){
     hoverStyle.innerHTML = `
       nav, #Home, .contactbackground{ background:#F7F5FB; }
       .contactbackground{ border:1px solid #0D1F2D; }
-      nav a, nav h4, #Home h1, #Home p, #ContactMe h1, #ContactMe p, footer, #Achievements h1{ color:# 0D1F2D !important; }
+      nav a, nav h4, #Home h1, #Home p, #ContactMe h1, #ContactMe p, footer, { color:# 0D1F2D !important; 
+      }
       .info, .skill, .Proj, .cert{
       background:#F7F5FB !important;
       border:1px solid #0D1F2D !important; 
