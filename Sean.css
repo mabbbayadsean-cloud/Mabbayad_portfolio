@@ -392,23 +392,28 @@ footer {
   .skill { width: 160px; }
 }
 
-/* MOBILE SCREENS (320px - 768px) - FIXED NAV */
 @media (max-width: 768px) {
+  /* Logo nasa taas, nav nasa baba */
+  header, .header {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
   nav {
     display: flex !important;
     flex-wrap: nowrap !important;
     overflow-x: auto !important;
     white-space: nowrap !important;
-    -webkit-overflow-scrolling: touch;
-    gap: 12px !important;
-    padding: 10px 15px 8px 15px !important;
+    width: 100% !important;
     justify-content: flex-start !important;
+    gap: 10px !important;
+    padding: 10px !important;
   }
+  
   nav a {
-    margin-left: 0 !important;
-    padding: 6px 10px !important;
-    font-size: 13px !important;
     flex: 0 0 auto !important;
+    font-size: 13px !important;
+    padding: 6px 10px !important;
   }
 }
 #Home {
