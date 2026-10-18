@@ -50,6 +50,7 @@ nav a:active {
     padding-bottom: 3px;
     transform: scale(0.95);
 }
+/*FOOTER*/
 footer {
     color: #F7F5FB;
     text-align: center;
@@ -59,8 +60,10 @@ footer {
     font-style: italic;
     color: rgb(255, 201, 60);
     font-size: 16px;
+    padding-bottom:30px;
     
 }
+
 /*CSS STYLE FOR CERTS*/
 #Achievements{
     max-width: 1200px;
