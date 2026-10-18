@@ -20,19 +20,37 @@ function updateTheme(isDarkMode){
   if(isDarkMode){
     // DARK MODE DEFAULT MO - card dark, hover white
     hoverStyle.innerHTML = `
-      .info, .skill, .Proj, .cert{ background:#0D1F2D !important; border:1px solid #F7F5FB !important; color:#F7F5FB !important; }
-      .info h3, .info p, .info li, .skill h3, .skill p, .Proj h3, .Proj p, .cert h3, .cert p{ color:#F7F5FB !important; }
-      .info:hover, .skill:hover, .Proj:hover, .cert:hover{ background:#F7F5FB !important; transform:translateY(-8px); }
-      .info:hover h3, .info:hover p, .info:hover li, .skill:hover h3, .skill:hover p, .Proj:hover h3, .Proj:hover p, .cert:hover h3, .cert:hover p{ color:#0D1F2D !important; }
+      .info, .skill, .Proj, .cert{
+      background:#0D1F2D !important;
+      border:1px solid #F7F5FB !important; 
+      color:#F7F5FB !important;
+      }
+      .info h3, .info p, .info li, .skill h3, .skill p, .Proj h3, .Proj p, .cert h3, .cert p
+      { color:#F7F5FB !important;
+      }
+      .info:hover, .skill:hover, .Proj:hover, .cert:hover{ 
+      background:#F7F5FB !important; transform:translateY(-8px); }
+      .info:hover h3, .info:hover p, .info:hover li, .skill:hover h3, .skill:hover p, .Proj:hover h3, .Proj:hover p, .cert:hover h3, .cert:hover p{
+       color:#0D1F2D !important; }
+       #AboutMe em, .skills em, .projects em, #ContactMe em, #Achievements em, .info h3, .skill h3, .Proj h3{
+  color:#F9AB55 !important;
+}
     `;
   } else {
     // LIGHT MODE - card white, hover dark - KITA NA HOVER
     hoverStyle.innerHTML = `
-      .info, .skill, .Proj, .cert{ background:#F7F5FB !important; border:1px solid #0D1F2D !important; color:#0D1F2D !important; }
-      .info h3, .info p, .info li, .skill h3, .skill p, .Proj h3, .Proj p, .cert h3, .cert p{ color:#0D1F2D !important; }
-      #AboutMe em, .skills em, .projects em, #ContactMe em, #Achievements em, .info h3, .skill h3, .Proj h3{ color:#F9AB55 !important; }
-      .info:hover, .skill:hover, .Proj:hover, .cert:hover{ background:#0D1F2D !important; transform:translateY(-8px); }
-      .info:hover h3, .info:hover p, .info:hover li, .skill:hover h3, .skill:hover p, .Proj:hover h3, .Proj:hover p, .cert:hover h3, .cert:hover p{ color:#F7F5FB !important; }
+      .info, .skill, .Proj, .cert{
+      background:#F7F5FB !important;
+      border:1px solid #0D1F2D !important; 
+      color:#0D1F2D !important; }
+      .info h3, .info p, .info li, .skill h3, .skill p, .Proj h3, .Proj p, .cert h3, .cert p{
+      color:#0D1F2D !important; }
+      #AboutMe em, .skills em, .projects em, #ContactMe em, #Achievements em, .info h3, .skill h3, .Proj h3{ 
+      color:#F9AB55 !important; }
+      .info:hover, .skill:hover, .Proj:hover, .cert:hover{
+       background:#0D1F2D !important; transform:translateY(-8px); }
+      .info:hover h3, .info:hover p, .info:hover li, .skill:hover h3, .skill:hover p, .Proj:hover h3, .Proj:hover p, .cert:hover h3, .cert:hover p{ 
+      color:#F7F5FB !important; }
     `;
   }
 }
