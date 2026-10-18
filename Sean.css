@@ -391,31 +391,16 @@ footer {
   .info { flex: 1 1 45%; }
   .skill { width: 160px; }
 }
-
-@media (max-width: 768px) {
-  /* Logo nasa taas, nav nasa baba */
-  header, .header {
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-  
+/* MOBILE SCREENS (320px - 600px) */
+@media (max-width: 600px) {
   nav {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    white-space: nowrap !important;
-    width: 100% !important;
-    justify-content: flex-start !important;
-    gap: 10px !important;
-    padding: 10px !important;
+    padding: 10px 15px;
   }
-  
   nav a {
-    flex: 0 0 auto !important;
-    font-size: 13px !important;
-    padding: 6px 10px !important;
+    margin-left: 0;
+    padding: 8px;
+    font-size: 12px;
   }
-}
 #Home {
     padding: 20px; 
     gap: 20px; 
