@@ -216,7 +216,7 @@ nav a:active {
     cursor: pointer;
 }
 .skill:hover{
-   transform: translateY(-14px);
+   transform: translateX(-14px);
   background:#F7F5FB ;
 }
 .skill:hover h3, .skill:hover p{
