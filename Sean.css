@@ -382,6 +382,7 @@ footer {
 /*IMPORTING FOR CLEAN LAYOUT PHONE AND TABLET */
 /* TABLET SCREENS (601px - 900px) */
 @media (max-width: 900px) {
+
   #Home { gap: 30px; }
   .profile-pic { width: 200px; height: 200px; }
   #Home h1 { font-size: 40px; }
@@ -391,15 +392,24 @@ footer {
   .skill { width: 160px; }
 }
 
-/* MOBILE SCREENS (320px - 600px) */
-@media (max-width: 600px) {
-nav {
-    padding: 10px 15px; 
-}
-nav a {
-    margin-left: 0;
-    padding: 8px; 
-    font-size: 12px;
+/* MOBILE SCREENS (320px - 768px) - FIXED NAV */
+@media (max-width: 768px) {
+  nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px !important;
+    padding: 10px 15px 8px 15px !important;
+    justify-content: flex-start !important;
+  }
+  nav a {
+    margin-left: 0 !important;
+    padding: 6px 10px !important;
+    font-size: 13px !important;
+    flex: 0 0 auto !important;
+  }
 }
 #Home {
     padding: 20px; 
