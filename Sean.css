@@ -310,6 +310,8 @@ nav a:active {
 #ContactMe {
     max-width: 1200px;
     margin: 50px auto;
+    margin:20px auto 0 !important;
+    padding-bottom:0 !important
 }
 #ContactMe h2 {
     text-align: center;
@@ -370,6 +372,8 @@ footer {
     color: #F7F5FB;
     text-align: center;
     font-size: 14px;
+    margin-top:10px !important;
+    padding:10px 0 70px 0 !important
 }
 .footer-quote {
     font-style: italic;
