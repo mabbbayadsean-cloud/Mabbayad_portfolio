@@ -39,6 +39,9 @@ function updateTheme(isDarkMode){
   } else {
     // LIGHT MODE - card white, hover dark - KITA NA HOVER
     hoverStyle.innerHTML = `
+      nav, #Home, .contactbackground{ background:#F7F5FB; }
+      .contactbackground{ border:1px solid #0D1F2D; }
+      nav a, nav h4, #Home h1, #Home p, #ContactMe h1, #ContactMe p, footer{ color:#0D1F2D; }
       .info, .skill, .Proj, .cert{
       background:#F7F5FB !important;
       border:1px solid #0D1F2D !important; 
