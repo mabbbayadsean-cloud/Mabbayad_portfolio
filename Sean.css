@@ -216,7 +216,7 @@ nav a:active {
     cursor: pointer;
 }
 .skill:hover{
-   transform: translateX(-14px);
+   transform: translateY(-14px);
   background:#F7F5FB ;
 }
 .skill:hover h3, .skill:hover p{
@@ -310,8 +310,6 @@ nav a:active {
 #ContactMe {
     max-width: 1200px;
     margin: 50px auto;
-    margin:20px auto 0 !important;
-    padding-bottom:0 !important
 }
 #ContactMe h2 {
     text-align: center;
@@ -372,14 +370,13 @@ footer {
     color: #F7F5FB;
     text-align: center;
     font-size: 14px;
-    margin-top:10px !important;
-    padding:10px 0 70px 0 !important
 }
 .footer-quote {
     font-style: italic;
     color: rgb(255, 201, 60);
     font-size: 16px;
-    flex-wrap:wrap;
+    padding-bottom:30px;
+    
 }
 
 /*IMPORTING FOR CLEAN LAYOUT PHONE AND TABLET */
@@ -438,30 +435,5 @@ nav a {
     width: 140px;
 }
 .Proj { width: 220px; }
-}
-nav a:hover{
-    color: #F7F5FB;
-    transform: none;
-}
-/* tanggal sticky hover sa nav pag nag-tap sa phone */
-nav a:hover{
-    color: #F7F5FB;
-    transform: none;
-}
-
-
-/* para mag-highlight ang Contact Me pag nasa pinakababa ka */
-#ContactMe{
-    min-height: 90vh;
-}
-
-/* para hindi matakpan ng Dark / Light button ang quote */
-footer{
-    padding-bottom: 80px;
-}
-
-/* para magkasya ang 4 na icons sa isang row */
-.links{
-    gap: 24px;
 }
 
