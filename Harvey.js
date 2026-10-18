@@ -2,10 +2,18 @@ const modeBtn = document.createElement('button');
 modeBtn.textContent = '🌙 Dark / Light';
 modeBtn.id = 'modeBtn';
 modeBtn.style.cssText = `
-  position:fixed; bottom:20px; right:20px;
-  background:#F9AB55; color:#0D1F2D; border:none;
-  padding:14px 18px; border-radius:20px;
-  cursor:pointer; font-weight:bold; transition:0.4s; z-index:100;
+  position:fixed; 
+  bottom:20px;
+  right:20px;
+  background:#F9AB55;
+  color:#0D1F2D;
+  border:none;
+  padding:14px 18px;
+  border-radius:20px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.4s;
+  z-index:100;
 `;
 document.body.appendChild(modeBtn);
 
