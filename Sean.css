@@ -375,6 +375,7 @@ footer {
     font-style: italic;
     color: rgb(255, 201, 60);
     font-size: 16px;
+    padding-bottom:80px;
     
 }
 
@@ -434,5 +435,30 @@ nav a {
     width: 140px;
 }
 .Proj { width: 220px; }
+}
+nav a:hover{
+    color: #F7F5FB;
+    transform: none;
+}
+/* tanggal sticky hover sa nav pag nag-tap sa phone */
+nav a:hover{
+    color: #F7F5FB;
+    transform: none;
+}
+
+
+/* para mag-highlight ang Contact Me pag nasa pinakababa ka */
+#ContactMe{
+    min-height: 90vh;
+}
+
+/* para hindi matakpan ng Dark / Light button ang quote */
+footer{
+    padding-bottom: 80px;
+}
+
+/* para magkasya ang 4 na icons sa isang row */
+.links{
+    gap: 24px;
 }
 
