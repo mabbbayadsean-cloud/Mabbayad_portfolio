@@ -5,7 +5,10 @@ modeBtn.style.cssText = `
   position:fixed; bottom:20px; right:20px;
   background:#F9AB55; color:#0D1F2D; border:none;
   padding:14px 18px; border-radius:20px;
-  cursor:pointer; font-weight:bold; transition:0.4s; z-index:100;
+  cursor:pointer; 
+  font-weight:bold;
+  transition:0.4s; 
+  z-index:100;
 `;
 document.body.appendChild(modeBtn);
 
@@ -38,13 +41,16 @@ function updateTheme(isDarkMode){
 }
 
 updateTheme(true);
-
 modeBtn.onclick = () => {
+  const darkSections = document.querySelectorAll('nav, #Home, .info, .skill, .Proj, .cert, .contactbackground');
+
   if(isDark){
     document.body.style.background = '#F7F5FB';
     document.body.style.color = '#0D1F2D';
-    if(footer) footer.style.color = '#0D1F2D';
-    if(footerQuote) footerQuote.style.color = '#F9AB55';
+    darkSections.forEach(el => {
+      el.style.background = '#F7F5FB';
+      el.style.color = '#0D1F2D';
+    });
     modeBtn.textContent = '☀️ Light Mode';
     modeBtn.style.background = '#0D1F2D';
     modeBtn.style.color = '#F7F5FB';
@@ -52,8 +58,10 @@ modeBtn.onclick = () => {
   } else {
     document.body.style.background = '#0D1F2D';
     document.body.style.color = '#F7F5FB';
-    if(footer) footer.style.color = '#F7F5FB';
-    if(footerQuote) footerQuote.style.color = '#F9AB55';
+    darkSections.forEach(el => {
+      el.style.background = '#0D1F2D';
+      el.style.color = '#F7F5FB';
+    });
     modeBtn.textContent = '🌙 Dark Mode';
     modeBtn.style.background = '#F9AB55';
     modeBtn.style.color = '#0D1F2D';
